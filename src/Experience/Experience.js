@@ -50,6 +50,8 @@ export default class Experience
         this.camera = new Camera()
         this.renderer = new Renderer()
 
+        this.scene.background = new THREE.Color(0xDFFC21)
+
         this.renderer.instance.xr.enabled = true;
         document.body.appendChild( VRButton.createButton( this.renderer.instance ) );
         this.renderer.instance.setAnimationLoop( ()=> {
@@ -57,6 +59,8 @@ export default class Experience
             this.renderer.instance.render( this.scene, this.camera.instance );
         });
 
+        //this.renderer.setClearColor(0xffffff)
+        console.log("hello", this.renderer)
 
         this.controllers = new Controllers()
 
