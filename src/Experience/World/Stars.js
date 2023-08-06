@@ -1,11 +1,15 @@
 import * as THREE from 'three'
 import Experience from '../Experience.js'
 
+
 export default class Stars {
     constructor(){
         this.experience = new Experience()
         this.scene = this.experience.scene
         this.resources = this.experience.resources
+    }
+        /*
+
         const particlesGeometry = new THREE.BufferGeometry()
         const count = 700
         const positions = new Float32Array(count*3)
@@ -64,4 +68,7 @@ export default class Stars {
     update(){
         // this.particles.rotation.x += 0.02
     }
+
+    */
+
 }

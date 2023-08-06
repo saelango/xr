@@ -6,6 +6,13 @@ import invertFragmentShader from '../../shaders/invert/fragment.glsl'
 import heatmapVertexShader from '../../shaders/heatmap/vertex.glsl'
 import heatmapFragmentShader from '../../shaders/heatmap/fragment.glsl'
 
+export default class Spectra {
+    constructor() {
+        // Empty constructor
+    }
+}
+
+/*
 export default class Spectra{
     constructor(){
         this.experience = new Experience()
@@ -310,3 +317,5 @@ export default class Spectra{
         this.scene.add(this.group)
     }
 }
+
+*/
